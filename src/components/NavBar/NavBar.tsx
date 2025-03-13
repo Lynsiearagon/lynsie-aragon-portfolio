@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <ul className="h-1/6">
+    <ul className="flex flex-row">
       <li>About Me</li>
       <li>Professional Experience & Skills</li>
       <li>Bowling</li>

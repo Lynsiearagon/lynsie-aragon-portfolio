@@ -1,7 +1,12 @@
+import NavBar from "../NavBar/NavBar";
+
 function Header() {
   return (
-    <div className="bg-red-600 h-1/3">
-      <div>This will be an image</div>
+    <div className="bg-green-100">
+      <div className="text-[#d34723] font-bold text-5xl text-center p-8">
+        Lynsie Aragon
+      </div>
+      <NavBar />
     </div>
   );
 }

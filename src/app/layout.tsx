@@ -26,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col">
+      <body className="flex flex-col ">
         <Header />
-        <main className="bg-blue-300 h-100">{children}</main>
+        <main className="bg-blue-300 ">{children}</main>
         <Footer />
       </body>
     </html>
