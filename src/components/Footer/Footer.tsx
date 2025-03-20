@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="absolute bottom-0 w-full bg-green-300">
+    <div className="w-full bg-green-300 p-8 text-center">
       Created and Maintained by Lynsie Aragon
     </div>
   );
