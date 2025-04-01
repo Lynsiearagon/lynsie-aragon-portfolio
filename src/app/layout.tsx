@@ -5,8 +5,9 @@ import Header from "@/components/Header/Header";
 import NavBar from "@/components/NavBar/NavBar";
 
 export const metadata: Metadata = {
-  title: "Lynsie Aragon Developer Portfolio",
-  description: "Lynsie Aragon's software engineering portfolio",
+  title: "Lynsie Aragon | Software Engineer",
+  description:
+    "Lynsie Aragon's portfolio: includes resume, work history, bowling, and showcases some of her frontend capabilites, as well as lists out her contact information.",
 };
 
 export default function RootLayout({
@@ -16,12 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen">
+      <body className="flex flex-col h-full">
         <Header />
-        <div className="flex flex-row h-screen">
-          <main className="bg-blue-300 w-full">{children}</main>
-          <NavBar />
-        </div>
+        <NavBar />
+        <main className="bg-blue-300 w-full">{children}</main>
         <Footer />
       </body>
     </html>
