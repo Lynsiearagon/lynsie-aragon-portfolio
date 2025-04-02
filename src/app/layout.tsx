@@ -17,10 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-full">
+      <body className="flex flex-col h-screen">
         <Header />
         <NavBar />
-        <main className="bg-blue-300 w-full">{children}</main>
+        <main className="bg-blue-300 w-full flex-grow flex justify-center items-center">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

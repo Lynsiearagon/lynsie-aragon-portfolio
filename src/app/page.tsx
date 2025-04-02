@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="p-12 sm:pb-16 sm:py-12 sm:px-24">
-      <div className="flex flex-col lg:flex-row justify-evenly items-center">
-        <div className="flex justify-center items-center min-w-40 lg:w-1/3">
+    <div className="p-12 sm:py-12 sm:px-24">
+      <div className="flex flex-col xl:flex-row justify-center gap-8 items-center ">
+        <div className="flex justify-center items-center min-w-40 xl:w-1/4">
           <Image
             src={portfolioPicture}
             alt="Headshot of Lynsie"
@@ -15,8 +15,8 @@ export default function Home() {
             className="rounded-full"
           ></Image>
         </div>
-        <div className="lg:w-1/2">
-          <h1 className="text-5xl text-center mb-8 mt-8 lg:mt-0">About</h1>
+        <div className="xl:w-1/2">
+          <h1 className="text-5xl text-center mb-8 mt-8 xl:mt-0">About</h1>
           <div className="sm:text-justify grid gap-y-4">
             <p>
               Hi! I'm Lynsie, a full stack software developer specializing in
