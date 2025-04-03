@@ -27,17 +27,6 @@ export default function Home() {
             </p>
 
             <div>
-              <h2 className="font-bold">OUTSIDE PROJECTS</h2>
-              <p>
-                I recently started refactoring my old full stack project, Yapp,
-                to improve speeds and code readability. As I&apos;m going
-                through this project, I love to see how much I&apos;ve grown as
-                a developer. (What was 2022 Lynsie thinking?!)
-              </p>
-            </div>
-
-            <div>
-              <h2 className="font-bold">HOBBIES</h2>
               <p>
                 I&apos;ve been a bowler since I was nine years old, went to
                 Prairie View A&M University on a bowling scholarship (majoring

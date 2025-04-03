@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="flex flex-col h-screen">
         <Header />
         <NavBar />
-        <main className="bg-blue-300 w-full flex-grow flex justify-center items-center">
+        <main className="w-full flex-grow flex justify-center items-center">
           {children}
         </main>
         <Footer />
