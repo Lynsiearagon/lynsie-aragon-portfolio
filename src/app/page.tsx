@@ -19,10 +19,10 @@ export default function Home() {
           <h1 className="text-5xl text-center mb-8 mt-8 xl:mt-0">About</h1>
           <div className="sm:text-justify grid gap-y-4">
             <p>
-              Hi! I'm Lynsie, a full stack software developer specializing in
-              frontend development, primarily working with JavaScript, React,
-              NextJs, CSS, and Tailwind (but I can do backend work, too). I love
-              coding because it blends problem-solving and creativity,
+              Hi! I'm Lynsie, a Full Stack Software Developer specializing in
+              frontend web development, primarily working with JavaScript,
+              React, NextJs, CSS, and Tailwind (but I can do backend work, too).
+              I love coding because it blends problem-solving and creativity,
               challenging me daily and feeding my need for innovation.
             </p>
 

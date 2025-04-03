@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 function page() {
   return <div>Frontend Fun</div>;
