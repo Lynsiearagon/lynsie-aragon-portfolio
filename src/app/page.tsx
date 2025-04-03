@@ -19,8 +19,8 @@ export default function Home() {
           <h1 className="text-5xl text-center mb-8 mt-8 xl:mt-0">About</h1>
           <div className="sm:text-justify grid gap-y-4">
             <p>
-              Hi! I'm Lynsie, a Full Stack Software Developer specializing in
-              frontend web development, primarily working with JavaScript,
+              Hi! I&apos;m Lynsie, a Full Stack Software Developer specializing
+              in frontend web development, primarily working with JavaScript,
               React, NextJs, CSS, and Tailwind (but I can do backend work, too).
               I love coding because it blends problem-solving and creativity,
               challenging me daily and feeding my need for innovation.
@@ -30,22 +30,22 @@ export default function Home() {
               <h2 className="font-bold">OUTSIDE PROJECTS</h2>
               <p>
                 I recently started refactoring my old full stack project, Yapp,
-                to improve speeds and code readability. As I'm going through
-                this project, I love to see how much I've grown as a developer.
-                (What was 2022 Lynsie thinking?!)
+                to improve speeds and code readability. As I&apos;m going
+                through this project, I love to see how much I&apos;ve grown as
+                a developer. (What was 2022 Lynsie thinking?!)
               </p>
             </div>
 
             <div>
               <h2 className="font-bold">HOBBIES</h2>
               <p>
-                I've been a bowler since I was nine years old, went to Prairie
-                View A&M University on a bowling scholarship (majoring in
-                criminal justice, not computer science (career changer here)),
-                and I still bowl today. On Wednesday nights you can find me at
-                my bowling league in pursuit of my life long mission - bowl a
-                300! Checkout the <Link href="/bowling">Bowling</Link> section
-                to see more!
+                I&apos;ve been a bowler since I was nine years old, went to
+                Prairie View A&M University on a bowling scholarship (majoring
+                in criminal justice, not computer science (career changer
+                here)), and I still bowl today. On Wednesday nights you can find
+                me at my bowling league in pursuit of my life long mission -
+                bowl a 300! Checkout the <Link href="/bowling">Bowling</Link>{" "}
+                section to see more!
               </p>
             </div>
           </div>
