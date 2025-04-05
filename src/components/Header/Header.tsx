@@ -1,8 +1,13 @@
+import NavBar from "../NavBar/NavBar";
+
 function Header() {
   return (
-    <div className="p-8 border text-center">
-      <h1 className="font-bold text-5xl pt-4">Lynsie Aragon</h1>
-      <p className="p-4 text-lg">- Software Engineer - </p>
+    <div className="px-12 py-8 flex flex-row justify-between items-top ">
+      <div>
+        <h1 className="font-bold text-5xl flex flex-col">Lynsie Aragon</h1>
+        <p className="text-lg py-4">Software Engineer</p>
+      </div>
+      <NavBar />
     </div>
   );
 }

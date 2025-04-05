@@ -7,7 +7,7 @@ function NavBar() {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <div className="py-4 w-full border">
+    <div className="">
       <button
         className="w-full sm:hidden cursor-pointer flex justify-center items-center hover:text-blue-600"
         onClick={() => setShowNav(!showNav)}
@@ -17,7 +17,7 @@ function NavBar() {
       <ul
         className={`${
           showNav && window.innerWidth < 640 ? "flex flex flex-col" : "hidden"
-        } sm:flex sm:flex-col sm:flex-row justify-center items-center sm:gap-12`}
+        } sm:flex sm:flex-col sm:flex-row justify-center items-center gap-4 md:gap-12`}
       >
         <Link
           className="hover:text-blue-600"
@@ -35,13 +35,6 @@ function NavBar() {
         </Link>
         <Link
           className="hover:text-blue-600"
-          href={"/fun"}
-          onClick={() => setShowNav(!showNav)}
-        >
-          Frontend Fun
-        </Link>
-        <Link
-          className="hover:text-blue-600"
           href={"/bowling"}
           onClick={() => setShowNav(!showNav)}
         >
@@ -53,6 +46,13 @@ function NavBar() {
           onClick={() => setShowNav(!showNav)}
         >
           Contact
+        </Link>
+        <Link
+          className="hover:text-blue-600"
+          href={"/fun"}
+          onClick={() => setShowNav(!showNav)}
+        >
+          Fun
         </Link>
       </ul>
     </div>
