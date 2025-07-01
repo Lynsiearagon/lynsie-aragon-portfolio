@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolioPicture from "../photos/me.jpg";
+import portfolioPicture from "../../public/photos/me.jpg";
 import Link from "next/link";
 
 export default function Home() {

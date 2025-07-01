@@ -10,7 +10,7 @@ export default function page() {
         <h2 className="text-2xl">Work History</h2>
         <h3 className="text-lg flex flex-col md:flex-row justify-between">
           Full Stack Developer - Agility Consultants LLC - Remote
-          <span>Sept 2023 – Mar 2025</span>
+          <span>Sept 2023 - Mar 2025</span>
         </h3>
         <ul className="grid gap-y-2 text-justify pl-4 list-disc ml-4">
           <li>
@@ -38,7 +38,7 @@ export default function page() {
 
         <h3 className="text-lg flex flex-col md:flex-row justify-between">
           Paralegal - Fabricant LLP - Rye, NY
-          <span>Jan 2021 – Apr 2022</span>
+          <span>Jan 2021 - Apr 2022</span>
         </h3>
         <ul className="grid gap-y-2 text-justify pl-4 list-disc ml-4">
           <li>
@@ -53,7 +53,7 @@ export default function page() {
 
         <h3 className="text-lg flex flex-col md:flex-row justify-between">
           Paralegal - Hach Rose LLP - New York, NY
-          <span>Sept 2019 – Jan 2021</span>
+          <span>Sept 2019 - Jan 2021</span>
         </h3>
         <ul className="grid gap-y-2 text-justify pl-4 list-disc ml-4">
           <li>
@@ -68,7 +68,7 @@ export default function page() {
 
         <h3 className="text-lg flex flex-col md:flex-row justify-between">
           Legal Assistant - Desmarais LLP - New York, NY
-          <span>Jun 2018 – Aug 2019</span>
+          <span>Jun 2018 - Aug 2019</span>
         </h3>
         <ul className="grid gap-y-2 text-justify pl-4 list-disc ml-4">
           <li>
