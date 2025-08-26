@@ -1,18 +1,92 @@
 import Carousel from "@/components/Carousel";
 
-export default function page() {
+export default function BowlingPage() {
   return (
-    <div className="flex flex-col p-12 h-full flex justify-center md:w-3/4 lg:1/2">
-      <h1 className="text-5xl text-center mb-8">Bowling</h1>
-      <p className="text-center">
-        Bowling has been a passion since I was young. I come from a family of
-        bowlers and still bowl in league every Wednesday to reach my goal of
-        bowling a 300!
-      </p>
+    <div className="max-w-6xl mx-auto">
+      {/* Hero Section */}
+      <section className="text-center mb-16">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          🎳 Bowling Passion
+        </h1>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mb-8"></div>
+        <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          Bowling has been a passion since I was young. I come from a family of
+          bowlers and still bowl in league every Wednesday to reach my goal of
+          bowling a <span className="text-cyan-400 font-bold">300</span>!
+        </p>
+      </section>
 
-      <div className="my-12 grid gap-y-12 justify-center">
-        <Carousel />
-      </div>
+      {/* Bowling Stats */}
+      <section className="mb-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 text-center hover:border-blue-400/30 transition-all duration-300">
+            <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">🎯</span>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-2">Goal</h3>
+            <p className="text-3xl font-bold text-cyan-400">300</p>
+            <p className="text-slate-400 text-sm">Perfect Game</p>
+          </div>
+          
+          <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 text-center hover:border-blue-400/30 transition-all duration-300">
+            <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">🏆</span>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-2">Experience</h3>
+            <p className="text-3xl font-bold text-cyan-400">20+</p>
+            <p className="text-slate-400 text-sm">Years Bowling</p>
+          </div>
+          
+          <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 text-center hover:border-blue-400/30 transition-all duration-300">
+            <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span className="text-2xl">🎓</span>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-2">Scholarship</h3>
+            <p className="text-3xl font-bold text-cyan-400">PVAMU</p>
+            <p className="text-slate-400 text-sm">Bowling Scholarship</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Carousel Section */}
+      <section>
+        <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center flex items-center justify-center">
+          <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          Bowling Gallery
+        </h2>
+        <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700/30">
+          <Carousel />
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="mt-16">
+        <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700/50">
+          <h2 className="text-2xl font-bold text-cyan-400 mb-6">My Bowling Journey</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-3">🏫 College Years</h3>
+              <p className="text-slate-300 leading-relaxed">
+                I attended Prairie View A&M University on a bowling scholarship, 
+                where I competed at the collegiate level. While my major was in 
+                criminal justice, bowling was my true passion and kept me focused 
+                on my studies.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-3">🎯 Current Goals</h3>
+              <p className="text-slate-300 leading-relaxed">
+                Every Wednesday night, you can find me at my bowling league, 
+                working towards that elusive perfect game. The combination of 
+                precision, technique, and mental focus keeps me coming back week 
+                after week.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

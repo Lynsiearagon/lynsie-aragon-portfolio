@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Lynsie Aragon | Software Engineer",
+  title: "Lynsie Aragon | Full Stack Software Engineer",
   description:
-    "Lynsie Aragon's portfolio: includes resume, work history, bowling, and showcases some of her frontend capabilites, as well as lists out her contact information.",
+    "Lynsie Aragon's portfolio: Full Stack Software Engineer specializing in React, NextJS, and modern web technologies. View my experience, projects, and contact information.",
 };
 
 export default function RootLayout({
@@ -15,13 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="flex flex-col h-screen">
-        <Header />
-        <main className="w-full flex-grow flex justify-center ">
-          {children}
-        </main>
-        <Footer />
+    <html lang="en" className="scroll-smooth">
+      <body className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-50">
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

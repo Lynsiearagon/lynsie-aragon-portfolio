@@ -2,13 +2,25 @@ import NavBar from "./NavBar";
 
 function Header() {
   return (
-    <div className="px-12 py-8 flex flex-row justify-between items-top ">
-      <div>
-        <h1 className="font-bold text-5xl flex flex-col">Lynsie Aragon</h1>
-        <p className="text-lg py-4">Software Engineer</p>
+    <header className="bg-slate-800/50 backdrop-blur-sm border-b border-slate-700/50 sticky top-0 z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center py-6 gap-4">
+          <div className="space-y-2">
+            <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Lynsie Aragon
+            </h1>
+            <p className="text-lg text-slate-300 font-medium">
+              Full Stack Software Engineer
+            </p>
+            <div className="flex items-center gap-2 text-sm text-slate-400">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <span>Available for opportunities</span>
+            </div>
+          </div>
+          <NavBar />
+        </div>
       </div>
-      <NavBar />
-    </div>
+    </header>
   );
 }
 
