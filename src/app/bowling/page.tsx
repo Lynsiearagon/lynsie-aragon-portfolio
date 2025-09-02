@@ -139,8 +139,8 @@ export default function BowlingPage() {
                 Every Wednesday night you can find me at my bowling league,
                 working towards a perfect game. The combination of competition
                 and technique keeps me coming back each week. Similar to why I
-                love coding, bowling is a technical sport and I'm always working
-                to improve!
+                love coding, bowling is a technical sport and I&apos;m always
+                working to improve!
               </p>
             </div>
           </div>
