@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavBar from "./NavBar";
 
 function Header() {
@@ -8,18 +9,18 @@ function Header() {
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row justify-between items-start sm:items-center py-4 gap-4">
-          <div className="space-y-1">
-            <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent py-1 md:py-2">
-              Lynsie Aragon
+          <Link href={"/"} className="space-y-1">
+            <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent py-1 md:py-2 text-nowrap">
+              {`${"{ Lynsie Aragon }"}`}
             </h1>
             <p className="text-lg text-slate-300 font-medium">
-              Full Stack Software Engineer
+              Full Stack Developer
             </p>
             <div className="flex items-center gap-2 text-sm text-slate-400">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
               <span>Available for opportunities</span>
             </div>
-          </div>
+          </Link>
           <NavBar />
         </div>
       </div>

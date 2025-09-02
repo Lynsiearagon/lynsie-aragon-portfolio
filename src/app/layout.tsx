@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Lynsie Aragon | Full Stack Software Engineer",
+  title: "Lynsie Aragon | Full Stack Developer",
   description:
-    "Lynsie Aragon's portfolio: Full Stack Software Engineer specializing in React, NextJS, and modern web technologies. View my experience, projects, and contact information.",
+    "Lynsie Aragon's portfolio: Full Stack Developer specializing in React, NextJS, and modern web technologies. View my experience, projects, and contact information.",
 };
 
 export default function RootLayout({

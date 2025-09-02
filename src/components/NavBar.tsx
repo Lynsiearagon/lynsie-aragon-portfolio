@@ -17,7 +17,7 @@ function NavBar() {
     <nav className="relative">
       {/* Mobile menu button */}
       <button
-        className="sm:hidden p-2 rounded-lg bg-slate-700/50 hover:bg-slate-600/50 transition-colors"
+        className="lg:hidden p-2 rounded-lg bg-slate-700/50 hover:bg-slate-600/50 transition-colors"
         onClick={() => setShowNav(!showNav)}
         aria-label="Toggle navigation menu"
       >
@@ -49,7 +49,7 @@ function NavBar() {
       <ul
         className={`${
           showNav ? "flex" : "hidden"
-        } sm:flex absolute sm:relative top-full sm:top-auto left-0 sm:left-auto right-0 sm:right-auto mt-2 sm:mt-0 bg-slate-800/95 sm:bg-transparent backdrop-blur-sm sm:backdrop-blur-none rounded-lg sm:rounded-none border border-slate-700/50 sm:border-none p-4 sm:p-0 flex-col sm:flex-row gap-4 sm:gap-8 min-w-[200px] sm:min-w-0 z-50`}
+        } lg:flex absolute lg:relative top-full lg:top-auto left-0 lg:left-auto right-0 lg:right-auto mt-2 lg:mt-0 bg-slate-800/95 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none rounded-lg lg:rounded-none border border-slate-700/50 lg:border-none p-4 lg:p-0 flex-col lg:flex-row gap-4 lg:gap-8 min-w-[200px] lg:min-w-0 z-50`}
       >
         {navItems.map((item) => (
           <li key={item.href}>
