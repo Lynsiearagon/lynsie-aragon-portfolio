@@ -8,7 +8,7 @@ export default function BowlingPage() {
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent h-20">
           🎳 Bowling
         </h1>
-        <div className="w-30 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mb-8"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mb-8"></div>
         <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
           Bowling has been a passion since I was young. I come from a family of
           bowlers and still bowl in league every Wednesday to reach my goal of

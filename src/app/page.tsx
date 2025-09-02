@@ -7,14 +7,14 @@ export default function Home() {
     <div className="max-w-6xl mx-auto">
       {/* Hero Section */}
       <section className="text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent h-20">
           About Me
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full"></div>
       </section>
 
       {/* Main Content */}
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Image Section */}
         <div className="flex justify-center lg:justify-start">
           <div className="relative">
@@ -33,32 +33,47 @@ export default function Home() {
         {/* Content Section */}
         <div className="space-y-6">
           <div className="prose prose-slate prose-lg max-w-none">
-            <p className="text-lg leading-relaxed text-slate-300">
+            <p className="text-lg leading-relaxed text-slate-300 mb-4">
               I&apos;m{" "}
               <span className="text-blue-400 font-semibold">Lynsie</span>, a
               <span className="text-cyan-400 font-semibold">
                 {" "}
-                Full Stack Software Developer
+                Full Stack Software Developer{" "}
               </span>
-              specializing in frontend web development, primarily working with
+              specializing in frontend web development. I primarily work with
               <span className="text-blue-400 font-mono"> JavaScript</span>,
-              <span className="text-blue-400 font-mono"> React</span>,
               <span className="text-blue-400 font-mono"> NextJS</span>,
-              <span className="text-blue-400 font-mono"> CSS</span>, and
-              <span className="text-blue-400 font-mono"> Tailwind</span>
-              (but I can do backend work, too).
+              <span className="text-blue-400 font-mono"> AI Tools</span>, and
+              <span className="text-blue-400 font-mono"> Tailwind CSS</span>,
+              but also have professional experience with other technologies like{" "}
+              <span className="text-blue-400 font-mono"> SQL Databases</span>{" "}
+              and{" "}
+              <span className="text-blue-400 font-mono">
+                {" "}
+                Azure Cloud Services
+              </span>
+              .
             </p>
 
-            <p className="text-lg leading-relaxed text-slate-300">
-              I love coding because it blends problem-solving and creativity,
-              challenging me daily and feeding my need for innovation.
+            <p className="text-lg leading-relaxed text-slate-300 mb-4">
+              I discovered my love for coding back in early 2022 and decided to
+              change careers from legal to tech. In November 2022, I attended
+              App Academy, a full stack web development bootcamp, and landed my
+              first full stack role in September 2023.
+            </p>
+
+            <p className="text-lg leading-relaxed text-slate-300 mb-4">
+              I was thrusted into freelancing in April 2025, but it has allowed
+              me to learn more about my capabilites as a software engineer, work
+              directly with clients and business requirements, and work with new
+              technologies like Cursor and CoPilot.
             </p>
           </div>
 
           {/* Bowling Section */}
           <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h3 className="text-xl font-semibold text-cyan-400 mb-3">
-              🎳 Bowling Enthusiast
+              🎳 Passionate Bowler
             </h3>
             <p className="text-slate-300 leading-relaxed">
               I&apos;ve been a bowler since I was nine years old, went to

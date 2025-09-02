@@ -3,10 +3,10 @@ export default function ExperiencePage() {
     <div className="max-w-4xl mx-auto">
       {/* Hero Section */}
       <section className="text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent h-20">
           Experience
         </h1>
-        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mb-8"></div>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mb-12"></div>
 
         {/* Resume Download Button */}
         <a
@@ -55,6 +55,48 @@ export default function ExperiencePage() {
           <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
               <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
+                Software Developer
+              </h3>
+              <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30">
+                Apr 2025 - Present
+              </span>
+            </div>
+            <p className="text-slate-400 mb-4 font-medium">
+              Freelance - Remote
+            </p>
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex items-start">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>
+                  Builds and optimizes full-scale websites for multiple T2
+                  clients using Next.js, Tailwind CSS, and Directus, while
+                  implementing SEO best practices to enhance search visibility
+                  and user acquisition
+                </span>
+              </li>
+              <li className="flex items-start">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>
+                  Collaborates with cross-functional teams, including design,
+                  engineering, and product management, to align project
+                  objectives and ensure timely, high-quality deliverables
+                </span>
+              </li>
+              <li className="flex items-start">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                <span>
+                  Translates Figma designs into responsive, accessible, and
+                  pixel-perfect components, maintaining design fi delity across
+                  devices and browsers
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Full Stack Developer */}
+          <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+              <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
                 Full Stack Developer
               </h3>
               <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30">
@@ -68,39 +110,25 @@ export default function ExperiencePage() {
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <span>
-                  Developed SaaS web apps for a major federal agency, ensuring
-                  seamless agriculture data exchange across all 50 states, US
-                  territories, and the federal government
+                  Engineered SaaS web applications for a major federal agency,
+                  enabling secure and seamless agriculture data exchange across
+                  all U.S. states, territories, and federal government
                 </span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <span>
-                  Built pixel-perfect UIs based on specs and refactored
-                  frontends in JavaScript, React, and CSS, resulting in a
-                  frictionless user experience, data integrity, and improved
-                  accessibility
+                  Developed and refactored accessible, pixel-perfect user
+                  interfaces using JavaScript, React, and CSS, enhancing
+                  usability and overall user satisfaction
                 </span>
               </li>
               <li className="flex items-start">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 <span>
-                  Implemented robust error handling, debugged, and used best
-                  practices for maintainable and scalable apps
-                </span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Identified and resolved UX/UI issues, enhancing overall
-                  product usability and client satisfaction
-                </span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Created and consumed RESTful APIs to enable full CRUD
-                  functionality
+                  Resolved frontend issues, implemented robust error handling,
+                  and applied best practices to ensure scalable, maintainable,
+                  and high-performance applications
                 </span>
               </li>
             </ul>
@@ -109,19 +137,19 @@ export default function ExperiencePage() {
           {/* Paralegal Positions */}
           {[
             {
-              title: "Paralegal",
+              title: "Intellectual Property Paralegal",
               company: "Fabricant LLP",
               location: "Rye, NY",
               period: "Jan 2021 - Apr 2022",
             },
             {
-              title: "Paralegal",
+              title: "Securities and Anti-Trust Paralegal",
               company: "Hach Rose LLP",
               location: "New York, NY",
               period: "Sept 2019 - Jan 2021",
             },
             {
-              title: "Legal Assistant",
+              title: "Intellectual Property Legal Assistant",
               company: "Desmarais LLP",
               location: "New York, NY",
               period: "Jun 2018 - Aug 2019",
@@ -146,15 +174,8 @@ export default function ExperiencePage() {
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                   <span>
-                    Used SQL queries in legal databases to extract case
-                    documents for hearings, trials, and depositions
-                  </span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>
-                    Managed court submissions and digital case files, ensuring
-                    compliance with strict deadlines
+                    Litigation - Maintained case organization and prepared for
+                    trials, hearings, and depositions
                   </span>
                 </li>
               </ul>
