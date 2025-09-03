@@ -11,7 +11,7 @@ function Header() {
         <div className="flex flex-row justify-between items-start sm:items-center py-4 gap-4">
           <Link href={"/"} className="space-y-1">
             <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent py-1 md:py-2 text-nowrap">
-              {`${"{ Lynsie Aragon }"}`}
+              Lynsie Aragon
             </h1>
             <p className="text-lg text-slate-300 font-medium">
               Full Stack Developer

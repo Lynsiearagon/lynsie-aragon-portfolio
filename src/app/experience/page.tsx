@@ -1,3 +1,5 @@
+import { workHistory } from "@/data/data";
+
 export default function ExperiencePage() {
   return (
     <div className="max-w-4xl mx-auto">
@@ -51,133 +53,30 @@ export default function ExperiencePage() {
         </h2>
 
         <div className="space-y-8">
-          {/* Full Stack Developer */}
-          <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-              <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
-                Software Developer
-              </h3>
-              <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30">
-                Apr 2025 - Present
-              </span>
-            </div>
-            <p className="text-slate-400 mb-4 font-medium">
-              Freelance - Remote
-            </p>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Builds and optimizes full-scale websites for multiple T2
-                  clients using Next.js, Tailwind CSS, and Directus, while
-                  implementing SEO best practices to enhance search visibility
-                  and user acquisition
-                </span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Collaborates with cross-functional teams, including design,
-                  engineering, and product management, to align project
-                  objectives and ensure timely, high-quality deliverables
-                </span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Translates Figma designs into responsive, accessible, and
-                  pixel-perfect components, maintaining design fi delity across
-                  devices and browsers
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Full Stack Developer */}
-          <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-              <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
-                Full Stack Developer
-              </h3>
-              <span className="px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30">
-                Sept 2023 - Mar 2025
-              </span>
-            </div>
-            <p className="text-slate-400 mb-4 font-medium">
-              Agility Consultants LLC - Remote
-            </p>
-            <ul className="space-y-3 text-slate-300">
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Engineered SaaS web applications for a major federal agency,
-                  enabling secure and seamless agriculture data exchange across
-                  all U.S. states, territories, and federal government
-                </span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Developed and refactored accessible, pixel-perfect user
-                  interfaces using JavaScript, React, and CSS, enhancing
-                  usability and overall user satisfaction
-                </span>
-              </li>
-              <li className="flex items-start">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span>
-                  Resolved frontend issues, implemented robust error handling,
-                  and applied best practices to ensure scalable, maintainable,
-                  and high-performance applications
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Paralegal Positions */}
-          {[
-            {
-              title: "Intellectual Property Paralegal",
-              company: "Fabricant LLP",
-              location: "Rye, NY",
-              period: "Jan 2021 - Apr 2022",
-            },
-            {
-              title: "Securities and Anti-Trust Paralegal",
-              company: "Hach Rose LLP",
-              location: "New York, NY",
-              period: "Sept 2019 - Jan 2021",
-            },
-            {
-              title: "Intellectual Property Legal Assistant",
-              company: "Desmarais LLP",
-              location: "New York, NY",
-              period: "Jun 2018 - Aug 2019",
-            },
-          ].map((job, index) => (
+          {workHistory.map((job, index) => (
             <div
               key={index}
-              className="bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300"
+              className={`${job.isCurrent ? "bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300" : "bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300"}`}
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                 <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
                   {job.title}
                 </h3>
-                <span className="px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50">
+                <span className={`${job.isCurrent ? "px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30" : "px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50"}`}>
                   {job.period}
                 </span>
               </div>
               <p className="text-slate-400 mb-4 font-medium">
                 {job.company} - {job.location}
               </p>
+
               <ul className="space-y-3 text-slate-300">
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>
-                    Litigation - Maintained case organization and prepared for
-                    trials, hearings, and depositions
-                  </span>
-                </li>
+                {job.description.map((bulletPoint: string, idx: Number) => (
+                  <li key={`${idx}`} className="flex items-start">
+                    <div className={`${job.isCurrent ? "w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" : "w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"}` }></div>
+                    <span>{bulletPoint}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           ))}

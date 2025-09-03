@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel";
+import {bowlingImages} from "@/data/data.js"
 
 export default function BowlingPage() {
   return (
@@ -93,7 +94,7 @@ export default function BowlingPage() {
           Bowling Gallery
         </h2>
         <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700/30">
-          <Carousel />
+          <Carousel images={bowlingImages} />
         </div>
       </section>
 
@@ -122,13 +123,13 @@ export default function BowlingPage() {
                 College Years
               </h3>
               <p className="text-slate-300 leading-relaxed">
-                I attended Prairie View A&M University on a bowling scholarship,
+                I attended Prairie View A&M University on a bowling scholarship
                 where I competed at the collegiate level, traveling primarily
                 around the southern United States, Chicago, Nashville, and even
                 New Jersey. While my major was in criminal justice with a focus
                 in court systems, bowling was my true passion and kept me
                 focused on my studies. In 2014, I was awarded Freshman of the
-                Year for the South Western Athletic Conference.
+                Year by the South Western Athletic Conference.
               </p>
             </div>
             <div>

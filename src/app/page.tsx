@@ -1,6 +1,7 @@
 import Image from "next/image";
 import portfolioPicture from "../../public/photos/me.jpg";
 import Link from "next/link";
+import { skills } from "@/data/data";
 
 export default function Home() {
   return (
@@ -73,28 +74,22 @@ export default function Home() {
           {/* Bowling Section */}
           <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h3 className="text-xl font-semibold text-cyan-400 mb-3">
-              🎳 Passionate Bowler
+              🎳 Bowler
             </h3>
             <p className="text-slate-300 leading-relaxed">
               I&apos;ve been a bowler since I was nine years old, went to
               <span className="text-blue-400 font-semibold">
                 {" "}
-                Prairie View A&M University
+                Prairie View A&M University {" "}
               </span>
-              on a bowling scholarship (majoring in criminal justice, not
-              computer science -
-              <span className="text-cyan-400 font-semibold">
-                {" "}
-                career changer here
-              </span>
-              ), and I still bowl today. On Wednesday nights you can find me at
+              on a bowling scholarship, majoring in criminal justice, and I still bowl today. On Wednesday nights you can find me at
               my bowling league in pursuit of my lifelong mission - bowl a 300!
             </p>
             <Link
               href="/bowling"
               className="inline-flex items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
             >
-              Check out my Bowling section
+              Check out my bowling stats
               <svg
                 className="ml-2 w-4 h-4"
                 fill="none"
@@ -113,16 +108,7 @@ export default function Home() {
 
           {/* Skills Preview */}
           <div className="flex flex-wrap gap-2">
-            {[
-              "React",
-              "NextJS",
-              "TypeScript",
-              "Tailwind CSS",
-              "Node.js",
-              "Full Stack",
-              "SQL Databases",
-              "Cursor",
-            ].map((skill) => (
+            {skills.map((skill) => (
               <span
                 key={skill}
                 className="px-3 py-1 bg-slate-700/50 text-slate-300 text-sm rounded-full border border-slate-600/50 hover:border-blue-400/50 transition-colors"

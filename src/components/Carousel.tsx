@@ -2,31 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import actionShot1 from "../../public/photos/Action-shot.jpg";
-import nationalsTeam from "../../public/photos/Nationals-team.jpg";
-import nationalsMe from "../../public/photos/Nationals-me.jpg";
-import pvamuTeam from "../../public/photos/PVAMU-team.jpg";
 
-const images = [
-  {
-    src: actionShot1,
-    alt: "Action shot of Lynsie rolling bowling ball during a SWAC tournament in 2015",
-  },
-  {
-    src: nationalsTeam,
-    alt: "Group photo of Lynsie and her team at USBC Nationals 2025 tournament",
-  },
-  {
-    src: nationalsMe,
-    alt: "Action shot of Lynsie rolling bowling ball at the 2025 USBC Nationals tournament",
-  },
-  { 
-    src: pvamuTeam, 
-    alt: "Prairie View A&M University 2017 bowling team" 
-  },
-];
 
-const Carousel = () => {
+
+const Carousel = ({images}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
