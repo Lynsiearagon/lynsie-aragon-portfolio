@@ -1,5 +1,5 @@
 import Carousel from "@/components/Carousel";
-import {bowlingImages} from "@/data/data.js"
+import { bowlingImages } from "@/data/data.js"
 
 export default function BowlingPage() {
   return (

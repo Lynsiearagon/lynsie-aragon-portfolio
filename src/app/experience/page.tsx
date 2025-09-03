@@ -71,7 +71,7 @@ export default function ExperiencePage() {
               </p>
 
               <ul className="space-y-3 text-slate-300">
-                {job.description.map((bulletPoint: string, idx: Number) => (
+                {job.description.map((bulletPoint: string, idx: number) => (
                   <li key={`${idx}`} className="flex items-start">
                     <div className={`${job.isCurrent ? "w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" : "w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"}` }></div>
                     <span>{bulletPoint}</span>

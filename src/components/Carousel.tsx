@@ -3,9 +3,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
+interface CarouselProp {
+  images: Array<{
+    src: string;
+    alt: string;
+  }>;
+}
 
 
-const Carousel = ({images}) => {
+const Carousel = ({images}: CarouselProp) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
