@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer className="bg-slate-800/50 border-t border-slate-700/50 mt-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Contact Information */}
           <div className="space-y-4">

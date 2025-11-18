@@ -5,7 +5,7 @@ import { skills } from "@/data/data";
 
 export default function Home() {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-5xl mx-auto">
       {/* Hero Section */}
       <section className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent h-20">
@@ -17,7 +17,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="grid lg:grid-cols-2 gap-12 items-start">
         {/* Image Section */}
-        <div className="flex justify-center lg:justify-start">
+        <div className="flex justify-center lg:justify-center">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 rounded-full blur-lg opacity-30 animate-pulse"></div>
             <Image
@@ -32,18 +32,18 @@ export default function Home() {
         </div>
 
         {/* Content Section */}
-        <div className="space-y-6">
+        <div className="space-y-6 lg:space-y-8">
           <div className="prose prose-slate prose-lg max-w-none">
             <p className="text-lg leading-relaxed text-slate-300 mb-4">
               I&apos;m{" "}
               <span className="text-blue-400 font-semibold">Lynsie</span>, a
               <span className="text-cyan-400 font-semibold">
                 {" "}
-                Full Stack Software Developer{" "}
+                Full Stack Developer{" "}
               </span>
               specializing in frontend web development. I primarily work with
               <span className="text-blue-400 font-mono"> JavaScript</span>,
-              <span className="text-blue-400 font-mono"> NextJS</span>,
+              <span className="text-blue-400 font-mono"> Next.Js</span>,
               <span className="text-blue-400 font-mono"> AI Tools</span>, and
               <span className="text-blue-400 font-mono"> Tailwind CSS</span>,
               but also have professional experience with other technologies like{" "}
@@ -55,41 +55,23 @@ export default function Home() {
               </span>
               .
             </p>
-
             <p className="text-lg leading-relaxed text-slate-300 mb-4">
-              I discovered my love for coding back in early 2022 and decided to
-              change careers from legal to tech. In November 2022, I attended
-              App Academy, a full stack web development bootcamp, and landed my
-              first full stack role in September 2023.
-            </p>
-
-            <p className="text-lg leading-relaxed text-slate-300 mb-4">
-              I was thrusted into freelancing in April 2025, but it has allowed
-              me to learn more about my capabilites as a software engineer, work
-              directly with clients and business requirements, and work with new
-              technologies like Cursor and CoPilot.
+            When I'm not developing, you can find me on the bowling lanes chasing that perfect game - <span className="text-cyan-400 font-semibold">300</span>!
             </p>
           </div>
 
           {/* Bowling Section */}
           <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h3 className="text-xl font-semibold text-cyan-400 mb-3">
-              🎳 Bowler
+              Learn more about my professional experience or checkout my bowling stats!
             </h3>
-            <p className="text-slate-300 leading-relaxed">
-              I&apos;ve been a bowler since I was nine years old, went to
-              <span className="text-blue-400 font-semibold">
-                {" "}
-                Prairie View A&M University {" "}
-              </span>
-              on a bowling scholarship, majoring in criminal justice, and I still bowl today. On Wednesday nights you can find me at
-              my bowling league in pursuit of my lifelong mission - bowl a 300!
-            </p>
+
+            <div className="flex flex-row gap-6">
             <Link
-              href="/bowling"
-              className="inline-flex items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+              href="/experience"
+              className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "
             >
-              Check out my bowling stats
+              Go to Work History
               <svg
                 className="ml-2 w-4 h-4"
                 fill="none"
@@ -104,6 +86,28 @@ export default function Home() {
                 />
               </svg>
             </Link>
+            
+            <Link
+              href="/bowling"
+              className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "
+            >
+              Take Me Bowling!
+              <svg
+                className="ml-2 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+
+            </div>
           </div>
 
           {/* Skills Preview */}

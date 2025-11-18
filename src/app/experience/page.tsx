@@ -56,13 +56,23 @@ export default function ExperiencePage() {
           {workHistory.map((job, index) => (
             <div
               key={index}
-              className={`${job.isCurrent ? "bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300" : "bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300"}`}
+              className={`${
+                job.isCurrent
+                  ? "bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300"
+                  : "bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300"
+              }`}
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
                 <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
                   {job.title}
                 </h3>
-                <span className={`${job.isCurrent ? "px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30" : "px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50"}`}>
+                <span
+                  className={`${
+                    job.isCurrent
+                      ? "px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30"
+                      : "px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50"
+                  }`}
+                >
                   {job.period}
                 </span>
               </div>
@@ -70,10 +80,16 @@ export default function ExperiencePage() {
                 {job.company} - {job.location}
               </p>
 
-              <ul className="space-y-3 text-slate-300">
+              <ul className="space-y-2 text-slate-300">
                 {job.description.map((bulletPoint: string, idx: number) => (
                   <li key={`${idx}`} className="flex items-start">
-                    <div className={`${job.isCurrent ? "w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" : "w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"}` }></div>
+                    <div
+                      className={`${
+                        job.isCurrent
+                          ? "w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"
+                          : "w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"
+                      }`}
+                    ></div>
                     <span>{bulletPoint}</span>
                   </li>
                 ))}
@@ -84,7 +100,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* Projects Section */}
-      <section>
+      {/* <section>
         <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
           <svg
             className="w-8 h-8 mr-3"
@@ -107,7 +123,7 @@ export default function ExperiencePage() {
             More projects coming soon! Check back for updates on my latest work.
           </p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
