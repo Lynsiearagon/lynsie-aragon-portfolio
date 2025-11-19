@@ -56,57 +56,59 @@ export default function Home() {
               .
             </p>
             <p className="text-lg leading-relaxed text-slate-300 mb-4">
-            When I'm not developing, you can find me on the bowling lanes chasing that perfect game - <span className="text-cyan-400 font-semibold">300</span>!
+              When I&apos;m not developing, you can find me on the bowling lanes
+              chasing that perfect game -{" "}
+              <span className="text-cyan-400 font-semibold">300</span>!
             </p>
           </div>
 
           {/* Bowling Section */}
           <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h3 className="text-xl font-semibold text-cyan-400 mb-3">
-              Learn more about my professional experience or checkout my bowling stats!
+              Learn more about my professional experience or checkout my bowling
+              stats!
             </h3>
 
             <div className="flex flex-row gap-6">
-            <Link
-              href="/experience"
-              className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "
-            >
-              Go to Work History
-              <svg
-                className="ml-2 w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+              <Link
+                href="/experience"
+                className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </Link>
-            
-            <Link
-              href="/bowling"
-              className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "
-            >
-              Take Me Bowling!
-              <svg
-                className="ml-2 w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </Link>
+                Go to Work History
+                <svg
+                  className="ml-2 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
 
+              <Link
+                href="/bowling"
+                className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "
+              >
+                Take Me Bowling!
+                <svg
+                  className="ml-2 w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
             </div>
           </div>
 

@@ -10,7 +10,7 @@ function NavBar() {
     { href: "/experience", label: "Experience" },
     { href: "/bowling", label: "Bowling" },
     { href: "/contact", label: "Contact" },
-    { href: "/fun", label: "Fun" },
+    // { href: "/fun", label: "Fun" },
   ];
 
   return (
