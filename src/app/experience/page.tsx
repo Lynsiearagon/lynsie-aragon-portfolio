@@ -1,4 +1,5 @@
-import { workHistory } from "@/data/data";
+import { projects, workHistory } from "@/data/data";
+import Image from "next/image";
 
 export default function ExperiencePage() {
   return (
@@ -100,7 +101,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* Projects Section */}
-      {/* <section>
+      <section>
         <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
           <svg
             className="w-8 h-8 mr-3"
@@ -118,12 +119,52 @@ export default function ExperiencePage() {
           Projects
         </h2>
 
-        <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700/30 text-center">
-          <p className="text-slate-400 text-lg">
-            More projects coming soon! Check back for updates on my latest work.
-          </p>
+        <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700/30 grid md:grid-cols-2 grid-cols-1 gap-8">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="border border-1 rounded-lg flex flex-col gap-4 p-4"
+            >
+              <div className="relative aspect-6/4 w-full">
+                <Image
+                  src={project.image}
+                  fill
+                  className="object-cover"
+                  alt="Yapp"
+                ></Image>
+              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener"
+                className="text-2xl font-bold hover:underline w-fit"
+              >
+                {project.title}
+              </a>
+              <p className="h-28 item-center">{project.description}</p>
+              <ul className="flex flex-wrap gap-2 ">
+                {project.techStack.map((techItem: string) => (
+                  <li
+                    key={techItem}
+                    className="border w-fit rounded-full py-1 px-4 text-sm"
+                  >
+                    {techItem}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-row gap-8 items-center justify-center my-4">
+                <a href={project.link} className="hover:underline">
+                  View Website
+                </a>
+                <a href={project.codeLink} className="hover:underline">
+                  View ReadMe
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

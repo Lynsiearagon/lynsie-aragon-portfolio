@@ -104,4 +104,23 @@ export const skills = [
   "AI Tools",
 ];
 
-export const projects = [];
+export const projects = [
+  {
+    title: "Yapp",
+    description:
+      "Yapp is a full stack clone of Yelp. Yapp allows users to search for and review restaurants with full CRUD functionality.",
+    techStack: ["Javascript", "React", "Ruby on Rails", "PostgreSQL", "CSS"],
+    image: "/photos/YappThumbnail.png",
+    link: "https://yapp.onrender.com/",
+    codeLink: "https://github.com/Lynsiearagon/Yapp#readme",
+  },
+  {
+    title: "Trip It",
+    description:
+      "A MERN stack app that allows users to create and organize trips with others. I developed this app with three other engineers, leading the development on the frontend. ",
+    techStack: ["MERN Stack", "MongoDB", "Express", "React", "Node.js", "CSS"],
+    image: "/photos/TripItThumbnail.png",
+    link: "https://trip-it.onrender.com/",
+    codeLink: "https://github.com/ShawnaEHartley/trip-it#readme",
+  },
+];
