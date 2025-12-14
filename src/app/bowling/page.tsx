@@ -7,7 +7,7 @@ export default function BowlingPage() {
       {/* Hero Section */}
       <section className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent h-20">
-          🎳 Bowling
+          #Bowling
         </h1>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto rounded-full mb-8"></div>
         <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">

@@ -41,7 +41,7 @@ export default function NavBar() {
     { label: "Home", href: "/" },
     { label: "Experience", href: "/experience" },
     { label: "Bowling", href: "/bowling" },
-    { label: "Contact", href: "/contact" },
+    { label: "Connect", href: "/connect" },
   ];
 
   const overlay = (

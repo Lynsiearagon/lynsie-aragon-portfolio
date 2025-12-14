@@ -36,7 +36,7 @@ function Header() {
                 isShrunk ? "scale-95" : "scale-100"
               }`}
             >
-              Lynsie Aragon
+              {`{ LynsieAragon }`}
             </Link>
 
             {/* Keep the extra info in DOM and animate hide/show */}
@@ -67,7 +67,7 @@ function Header() {
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span>
                   Available to{" "}
-                  <Link href={"/contact"} className="hover:underline">
+                  <Link href={"/connect"} className="hover:underline">
                     Connect
                   </Link>
                 </span>
