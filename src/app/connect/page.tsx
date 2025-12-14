@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 
 export default function ContactPage() {
@@ -17,51 +18,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Methods */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        {/* Email Section */}
-        <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
-          <div className="text-center">
-            <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg
-                className="w-8 h-8 text-blue-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold text-white mb-4">Email</h3>
-            <p className="text-slate-300 mb-6 h-12.5">
-              Email me for professional inquiries
-            </p>
-            <a
-              href="mailto:Lynsie.aragon@gmail.com"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
-            >
-              <svg
-                className="w-5 h-5 mr-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                />
-              </svg>
-              Send Email
-            </a>
-          </div>
-        </div>
-
+      <div className="grid md:grid-cols-2  gap-8 mb-16">
         {/* LinkedIn Section */}
         <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
           <div className="text-center">
@@ -131,6 +88,13 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
+
+      {/* Contact Form */}
+      <section className="mt-8 mb-16 mx-auto">
+        <div className="">
+          <ContactForm />
+        </div>
+      </section>
 
       {/* Additional Platforms */}
       {/* <section className="text-center">

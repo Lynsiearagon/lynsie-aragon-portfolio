@@ -101,16 +101,6 @@ export default function NavBar() {
               ))}
             </ul>
           </nav>
-
-          <div className="px-6 pb-6">
-            <a
-              href="mailto:Lynsie.aragon@gmail.com"
-              className="inline-flex w-full items-center justify-center px-4 py-2 text-sm bg-blue-500 hover:bg-blue-600 text-white rounded-md transition"
-              onClick={() => setOpen(false)}
-            >
-              Email Me
-            </a>
-          </div>
         </div>
       </aside>
     </>

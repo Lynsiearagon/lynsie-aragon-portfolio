@@ -8,17 +8,6 @@ function Footer() {
           {/* Contact Information */}
           <div className="space-y-3 flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold text-cyan-400">Get In Touch</h3>
-            <div className="space-y-3">
-              <p className="text-slate-300">
-                <span className="text-slate-400">Email:</span>{" "}
-                <a
-                  href="mailto:Lynsie.aragon@gmail.com"
-                  className="text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  Lynsie.aragon@gmail.com
-                </a>
-              </p>
-            </div>
 
             {/* Social Links */}
             <div className="flex gap-4">
