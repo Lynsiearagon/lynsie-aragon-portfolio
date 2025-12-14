@@ -1,5 +1,6 @@
-import { projects, workHistory, skills } from "@/data/data";
-import Image from "next/image";
+import Job from "@/components/Job";
+import ProjectCard from "@/components/ProjectCard";
+import { projects, workHistory, skills, volunteerHistory } from "@/data/data";
 
 export default function ExperiencePage() {
   return (
@@ -56,47 +57,7 @@ export default function ExperiencePage() {
 
         <div className="space-y-8">
           {workHistory.map((job, index) => (
-            <div
-              key={index}
-              className={`${
-                job.isCurrent
-                  ? "bg-slate-800/50 rounded-xl p-6 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300"
-                  : "bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300"
-              }`}
-            >
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
-                  {job.title}
-                </h3>
-                <span
-                  className={`${
-                    job.isCurrent
-                      ? "px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium border border-blue-500/30"
-                      : "px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50"
-                  }`}
-                >
-                  {job.period}
-                </span>
-              </div>
-              <p className="text-slate-400 mb-4 font-medium">
-                {job.company} - {job.location}
-              </p>
-
-              <ul className="space-y-2 text-slate-300">
-                {job.description.map((bulletPoint: string, idx: number) => (
-                  <li key={`${idx}`} className="flex items-start">
-                    <div
-                      className={`${
-                        job.isCurrent
-                          ? "w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0"
-                          : "w-2 h-2 bg-slate-500 rounded-full mt-2 mr-3 flex-shrink-0"
-                      }`}
-                    ></div>
-                    <span>{bulletPoint}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <Job job={job} key={index} />
           ))}
         </div>
       </section>
@@ -120,82 +81,25 @@ export default function ExperiencePage() {
           Projects
         </h2>
 
-        <div className="bg-slate-800/30 rounded-xl p-8 border border-slate-700/30 grid md:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 lg:gap-12">
           {projects.map((project) => (
-            <div
-              key={project.title}
-              className=" border-2 border-cyan-400/30 rounded-lg flex flex-col gap-4 p-8"
-            >
-              <div className="relative aspect-6/4 w-full">
-                <Image
-                  src={project.image}
-                  fill
-                  className="object-cover"
-                  alt="Yapp"
-                ></Image>
-              </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener"
-                className="text-2xl font-bold hover:underline w-fit border-b border-white/20 pb-4 w-full"
-              >
-                {project.title}
-              </a>
-              <p className="flex-1 item-center">{project.description}</p>
-              <ul className="flex flex-wrap gap-2 py-2 justify-center">
-                {project.techStack.map((techItem: string) => (
-                  <li
-                    key={techItem}
-                    className="border w-fit rounded-full py-1 px-4 text-sm"
-                  >
-                    {techItem}
-                  </li>
-                ))}
-              </ul>
-
-              <div className="flex flex-row gap-8 items-center justify-center my-4">
-                <a href={project.link} className="hover:underline">
-                  View Website
-                </a>
-                <a href={project.codeLink} className="hover:underline">
-                  View ReadMe
-                </a>
-              </div>
-            </div>
+            <ProjectCard key={project.title} project={project} />
           ))}
         </div>
       </section>
 
-      {/* Volunteer Section (mirrors Work History style, no image) */}
-      {/* <section className="mb-16">
+      {/* Volunteer Section */}
+      <section className="mb-16">
         <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
           Volunteer
         </h2>
 
         <div className="space-y-8">
-          <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-              <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
-                Silver Circles Volunteer Tech Coach
-              </h3>
-              <span className="px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50">
-                Search and Care - New York, NY
-              </span>
-              <span className="text-slate-400 mb-4 font-medium">
-                Aug 2023 - May 2025 · 1 yr 10 mos
-              </span>
-
-              <ul className="space-y-2 text-slate-300">
-                <li className="flex items-start">
-                  Guided senior citizens in using and troubleshooting personal
-                  technology for confident and independent living
-                </li>
-              </ul>
-            </div>
-          </div>
+          {volunteerHistory.map((job) => (
+            <Job job={job} key={job.title} />
+          ))}
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

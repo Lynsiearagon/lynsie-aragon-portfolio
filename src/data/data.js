@@ -44,18 +44,8 @@ export const workHistory = [
     isCurrent: false,
   },
   {
-    title: "Volunteer Tech Coach",
-    company: "Search and Care",
-    location: "New York, NY",
-    period: "Aug 2023 - May 2025",
-    description: [
-      "Trained senior citizens to use and troubleshoot personal devices promoting digital wellbeing, independence, and security",
-    ],
-    isCurrent: false,
-  },
-  {
     title: "Career Change",
-    company: "None",
+    company: "Student",
     location: "New York, NY",
     period: "Apr 2022 - Sept 2023",
     description: ["Transitioned from legal to tech"],
@@ -122,5 +112,18 @@ export const projects = [
     image: "/photos/TripItThumbnail.png",
     link: "https://trip-it.onrender.com/",
     codeLink: "https://github.com/ShawnaEHartley/trip-it#readme",
+  },
+];
+
+export const volunteerHistory = [
+  {
+    title: "Volunteer Tech Coach",
+    company: "Search and Care",
+    location: "New York, NY",
+    period: "Aug 2023 - May 2025",
+    description: [
+      "Trained senior citizens to use and troubleshoot personal tech devices promoting digital wellbeing, independence, and digital safety",
+    ],
+    isCurrent: false,
   },
 ];
