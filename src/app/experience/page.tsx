@@ -1,4 +1,4 @@
-import { projects, workHistory } from "@/data/data";
+import { projects, workHistory, skills } from "@/data/data";
 import Image from "next/image";
 
 export default function ExperiencePage() {
@@ -32,6 +32,20 @@ export default function ExperiencePage() {
           </svg>
           Download Resume
         </a>
+      </section>
+
+      {/* Skills */}
+      <section className="mt-8 mb-12 flex justify-center">
+        <div className="flex flex-wrap gap-2">
+          {skills.map((s) => (
+            <span
+              key={s}
+              className="px-3 py-1 bg-slate-700/50 text-slate-300 text-sm rounded-full border border-slate-600/50"
+            >
+              {s}
+            </span>
+          ))}
+        </div>
       </section>
 
       {/* Work History Section */}

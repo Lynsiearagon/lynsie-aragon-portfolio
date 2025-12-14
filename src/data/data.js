@@ -96,12 +96,12 @@ export const workHistory = [
 export const skills = [
   "React",
   "NextJS",
+  "JavaScript",
   "TypeScript",
   "Tailwind CSS",
-  "Node.js",
-  "Full Stack",
   "SQL Databases",
   "AI Tools",
+  "Git / GitHub",
 ];
 
 export const projects = [

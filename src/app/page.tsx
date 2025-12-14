@@ -111,18 +111,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
-          {/* Skills Preview */}
-          <div className="flex flex-wrap gap-2">
-            {skills.map((skill) => (
-              <span
-                key={skill}
-                className="px-3 py-1 bg-slate-700/50 text-slate-300 text-sm rounded-full border border-slate-600/50 hover:border-blue-400/50 transition-colors"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </div>
