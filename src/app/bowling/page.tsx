@@ -152,7 +152,7 @@ export default function BowlingPage() {
       {/* Story Section */}
       <section className="mt-16 mb-12">
         <div
-          className="bg-slate-800 rounded-xl p-12 border border-slate-700 bg-cover bg-center bg-no-repeat relative"
+          className="bg-slate-800 rounded-xl p-8 p-16 border border-slate-700 bg-cover bg-center bg-no-repeat relative"
           style={{
             backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
           }}
@@ -214,7 +214,7 @@ export default function BowlingPage() {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div
-            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center hover:border-blue-400 transition-all duration-300 bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 lg:p-16 border border-slate-700 text-center hover:border-blue-400 transition-all duration-300 bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -226,15 +226,15 @@ export default function BowlingPage() {
                   Aim For the Arrows
                 </span>
               </div>
-              <p className="text-lg font-semibold text-white mb-2">
+              <p className="text-lg font-semibold text-white mb-2 text-start">
                 Don&apos;t aim for the pins, aim for the arrows on the lane.
                 It&apos;s easier to hit a target that&apos;s closer than one
-                that&apos;s far away!
+                that&apos;s far away.
               </p>
             </div>
           </div>
           <div
-            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center hover:border-blue-400 transition-all duration-300 bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 lg:p-16 border border-slate-700 text-center hover:border-blue-400 transition-all duration-300 bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -246,7 +246,7 @@ export default function BowlingPage() {
                   Follow Through
                 </span>
               </div>
-              <p className="text-lg font-semibold text-white mb-2">
+              <p className="text-lg font-semibold text-white mb-2 text-start">
                 After releasing the ball, continue moving your arm upward above
                 your head; this helps increase power and accuracy.
               </p>

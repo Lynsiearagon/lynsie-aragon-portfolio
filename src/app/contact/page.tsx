@@ -37,8 +37,8 @@ export default function ContactPage() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">Email</h3>
-            <p className="text-slate-300 mb-6">
-              The best way to reach me for professional inquiries
+            <p className="text-slate-300 mb-6 h-12.5">
+              Email me for professional inquiries
             </p>
             <a
               href="mailto:Lynsie.aragon@gmail.com"
@@ -76,7 +76,8 @@ export default function ContactPage() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">LinkedIn</h3>
             <p className="text-slate-300 mb-6">
-              Connect with me professionally and see my latest updates
+              Connect with me professionally on LinkedIn and see my latest
+              updates
             </p>
             <Link
               href="https://www.linkedin.com/in/lynsie-aragon-dev/"
@@ -110,7 +111,7 @@ export default function ContactPage() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">GitHub</h3>
             <p className="text-slate-300 mb-6">
-              Connect with me professionally and see my latest updates
+              Connect with me on GitHub for my personal creations
             </p>
             <Link
               href="https://github.com/Lynsiearagon"
@@ -132,7 +133,7 @@ export default function ContactPage() {
       </div>
 
       {/* Additional Platforms */}
-      <section className="text-center">
+      {/* <section className="text-center">
         <h2 className="text-2xl font-bold text-cyan-400 mb-6">
           Other Platforms
         </h2>
@@ -153,7 +154,7 @@ export default function ContactPage() {
             View on Wellfound
           </Link>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
