@@ -7,8 +7,14 @@ function Header() {
   const [isShrunk, setIsShrunk] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setIsShrunk(window.scrollY > 100);
+    const onScroll = () => {
+      if (window.scrollY > 100) {
+        setIsShrunk(true);
+      } else setIsShrunk(false);
+    };
+
     window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -56,11 +62,7 @@ function Header() {
               </div>
 
               <div
-                className={`flex items-center gap-2 text-sm text-slate-400 transition-all duration-300 ease-in-out ${
-                  isShrunk
-                    ? "opacity-0 -translate-y-1"
-                    : "opacity-100 translate-y-0"
-                }`}
+                className={`flex items-center gap-2 text-sm text-slate-400 transition-all duration-300 ease-in-out `}
               >
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span>

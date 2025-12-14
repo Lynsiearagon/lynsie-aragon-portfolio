@@ -10,8 +10,7 @@ interface CarouselProp {
   }>;
 }
 
-
-const Carousel = ({images}: CarouselProp) => {
+const Carousel = ({ images }: CarouselProp) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -31,19 +30,19 @@ const Carousel = ({images}: CarouselProp) => {
   return (
     <div className="relative max-w-4xl mx-auto">
       {/* Main Image */}
-      <div className="relative overflow-hidden rounded-xl">
+      <div className="relative overflow-hidden rounded-xl h-[40dvh] lg:h-[50dvh] w-auto">
         <Image
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
-          width={1000}
-          height={800}
-          className="object-cover h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full transition-transform duration-500 ease-in-out hover:scale-105"
+          fill
+          className="object-contain transition-transform duration-500 ease-in-out hover:scale-105"
           priority
+          sizes="100vh, 50vh"
         />
-        
+
         {/* Image Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-        
+        <div className=" bg-black/50"></div>
+
         {/* Image Counter */}
         <div className="absolute bottom-4 right-4 bg-slate-800/80 text-white px-3 py-1 rounded-full text-sm font-medium">
           {currentIndex + 1} / {images.length}
@@ -56,18 +55,38 @@ const Carousel = ({images}: CarouselProp) => {
         className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-slate-800/80 hover:bg-slate-700/90 text-white p-3 rounded-full cursor-pointer transition-all duration-200 hover:scale-110 border border-slate-600/50"
         aria-label="Previous image"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
       </button>
-      
+
       <button
         onClick={nextImage}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-slate-800/80 hover:bg-slate-700/90 text-white p-3 rounded-full cursor-pointer transition-all duration-200 hover:scale-110 border border-slate-600/50"
         aria-label="Next image"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
         </svg>
       </button>
 

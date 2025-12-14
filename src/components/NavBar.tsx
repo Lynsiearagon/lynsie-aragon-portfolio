@@ -6,7 +6,12 @@ import { createPortal } from "react-dom";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false); // added
   const pathname = usePathname();
+
+  useEffect(() => {
+    setMounted(true); // only allow portal after mount
+  }, []);
 
   // Close on route change
   useEffect(() => {
@@ -39,10 +44,8 @@ export default function NavBar() {
     { label: "Contact", href: "/contact" },
   ];
 
-  // Backdrop and panel markup to render via portal so they sit outside header stacking contexts
   const overlay = (
     <>
-      {/* Backdrop (lower z than panel) */}
       <div
         className={`fixed inset-0 bg-black/40 z-50 transition-opacity duration-300 ${
           open
@@ -52,8 +55,6 @@ export default function NavBar() {
         onClick={() => setOpen(false)}
         aria-hidden={!open}
       />
-
-      {/* Right-side mobile nav panel (higher z than header) */}
       <aside
         className={`fixed top-0 right-0 z-[9999] h-[100dvh] w-[85%] max-w-sm bg-slate-900/95 border-l border-l-slate-700/30 backdrop-blur-sm transform shadow-xl transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
@@ -63,7 +64,6 @@ export default function NavBar() {
         aria-hidden={!open}
       >
         <div className="flex flex-col h-full">
-          {/* Close button */}
           <div className="flex justify-end p-4">
             <button
               aria-label="Close menu"
@@ -86,9 +86,8 @@ export default function NavBar() {
             </button>
           </div>
 
-          {/* Links */}
           <nav className="px-6 py-4 flex-1">
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-8">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -103,7 +102,6 @@ export default function NavBar() {
             </ul>
           </nav>
 
-          {/* Optional footer actions in the drawer */}
           <div className="px-6 pb-6">
             <a
               href="mailto:Lynsie.aragon@gmail.com"
@@ -120,8 +118,7 @@ export default function NavBar() {
 
   return (
     <>
-      {/* Desktop nav */}
-      <nav className="hidden md:flex items-center gap-6">
+      <nav className="hidden md:flex items-center gap-8 lg:gap-12">
         {NAV_ITEMS.map((item) => (
           <Link
             key={item.href}
@@ -133,14 +130,12 @@ export default function NavBar() {
         ))}
       </nav>
 
-      {/* Mobile toggle */}
       <div className="md:hidden flex items-center">
         <button
           aria-label="Open menu"
           onClick={() => setOpen(true)}
           className="inline-flex items-center p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-700/60 transition"
         >
-          {/* menu icon */}
           <svg
             className="w-6 h-6"
             fill="none"
@@ -157,8 +152,8 @@ export default function NavBar() {
         </button>
       </div>
 
-      {/* Render overlay into body so it isn't affected by header stacking context */}
-      {typeof document !== "undefined"
+      {/* Render overlay into body only after client mount to avoid SSR/CSR mismatch */}
+      {mounted && typeof document !== "undefined"
         ? createPortal(overlay, document.body)
         : null}
     </>

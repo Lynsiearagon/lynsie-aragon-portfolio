@@ -51,19 +51,6 @@ export default function ExperiencePage() {
       {/* Work History Section */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
-          <svg
-            className="w-8 h-8 mr-3"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h4z"
-            />
-          </svg>
           Work History
         </h2>
 
@@ -115,7 +102,7 @@ export default function ExperiencePage() {
       </section>
 
       {/* Projects Section */}
-      <section>
+      <section className="mb-16">
         <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
           <svg
             className="w-8 h-8 mr-3"
@@ -137,7 +124,7 @@ export default function ExperiencePage() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="border border-1 rounded-lg flex flex-col gap-4 p-4"
+              className=" border-2 border-cyan-400/30 rounded-lg flex flex-col gap-4 p-8"
             >
               <div className="relative aspect-6/4 w-full">
                 <Image
@@ -151,12 +138,12 @@ export default function ExperiencePage() {
                 href={project.link}
                 target="_blank"
                 rel="noopener"
-                className="text-2xl font-bold hover:underline w-fit"
+                className="text-2xl font-bold hover:underline w-fit border-b border-white/20 pb-4 w-full"
               >
                 {project.title}
               </a>
-              <p className="h-28 item-center">{project.description}</p>
-              <ul className="flex flex-wrap gap-2 ">
+              <p className="flex-1 item-center">{project.description}</p>
+              <ul className="flex flex-wrap gap-2 py-2 justify-center">
                 {project.techStack.map((techItem: string) => (
                   <li
                     key={techItem}
@@ -179,6 +166,36 @@ export default function ExperiencePage() {
           ))}
         </div>
       </section>
+
+      {/* Volunteer Section (mirrors Work History style, no image) */}
+      {/* <section className="mb-16">
+        <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
+          Volunteer
+        </h2>
+
+        <div className="space-y-8">
+          <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700/30 hover:border-slate-600/50 transition-all duration-300">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+              <h3 className="text-xl font-semibold text-white mb-2 md:mb-0">
+                Silver Circles Volunteer Tech Coach
+              </h3>
+              <span className="px-4 py-2 bg-slate-600/30 text-slate-300 rounded-full text-sm font-medium border border-slate-600/50">
+                Search and Care - New York, NY
+              </span>
+              <span className="text-slate-400 mb-4 font-medium">
+                Aug 2023 - May 2025 · 1 yr 10 mos
+              </span>
+
+              <ul className="space-y-2 text-slate-300">
+                <li className="flex items-start">
+                  Guided senior citizens in using and troubleshooting personal
+                  technology for confident and independent living
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section> */}
     </div>
   );
 }

@@ -117,7 +117,7 @@ export const projects = [
   {
     title: "Trip It",
     description:
-      "A MERN stack app that allows users to create and organize trips with others. I developed this app with three other engineers, leading the development on the frontend. ",
+      "A MERN stack app that allows users to create and organize trips with others. I developed this app with three other devs, leading the frontend. ",
     techStack: ["MERN Stack", "MongoDB", "Express", "React", "Node.js", "CSS"],
     image: "/photos/TripItThumbnail.png",
     link: "https://trip-it.onrender.com/",

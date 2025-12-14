@@ -143,7 +143,7 @@ export default function BowlingPage() {
           }}
         >
           <div className="absolute inset-0 bg-slate-900/95 rounded-xl"></div>
-          <div className="relative z-10 pt-12">
+          <div className="relative z-10 pt-6 lg:pt-12">
             <Carousel images={bowlingImages} />
           </div>
         </div>

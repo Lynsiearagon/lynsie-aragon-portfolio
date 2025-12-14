@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolioPicture from "../../public/photos/me.jpg";
+import portfolioPicture from "/public/photos/me.jpg";
 import Link from "next/link";
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
               alt="Headshot of Lynsie Aragon"
               width={350}
               height={350}
-              className="relative rounded-full border-4 border-slate-700 shadow-2xl"
+              className="relative rounded-full border-4 border-slate-700 shadow-2xl object-none"
               priority
             />
           </div>
@@ -64,11 +64,11 @@ export default function Home() {
           {/* Bowling Section */}
           <div className="bg-slate-800/50 rounded-xl p-6 border border-slate-700/50">
             <h3 className="text-xl font-semibold text-cyan-400 mb-3">
-              Learn more about my professional experience or checkout my bowling
-              stats!
+              Learn more about my professional experience or check out my
+              bowling stats!
             </h3>
 
-            <div className="flex flex-row gap-6">
+            <div className="flex flex-col md:flex-row gap-2 md:gap-6 justify-center">
               <Link
                 href="/experience"
                 className="inline-flex justify-between items-center mt-4 px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg "

@@ -6,7 +6,7 @@ function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Contact Information */}
-          <div className="space-y-3">
+          <div className="space-y-3 flex flex-col items-center md:items-start">
             <h3 className="text-xl font-bold text-cyan-400">Get In Touch</h3>
             <div className="space-y-3">
               <p className="text-slate-300">
