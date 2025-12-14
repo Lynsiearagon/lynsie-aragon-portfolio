@@ -1,7 +1,6 @@
 import Image from "next/image";
 import portfolioPicture from "../../public/photos/me.jpg";
 import Link from "next/link";
-import { skills } from "@/data/data";
 
 export default function Home() {
   return (
