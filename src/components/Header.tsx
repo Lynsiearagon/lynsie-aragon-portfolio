@@ -9,18 +9,31 @@ function Header() {
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-row justify-between items-start sm:items-center py-4 gap-4">
-          <Link href={"/"} className="space-y-1">
-            <h1 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent py-1 md:py-2 text-nowrap">
+          <div className="flex flex-col gap-1">
+            <Link
+              href={"/"}
+              className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent py-1 md:py-2 text-nowrap"
+            >
               Lynsie Aragon
-            </h1>
-            <p className="text-lg text-slate-300 font-medium">
-              Full Stack Developer
-            </p>
-            <div className="flex items-center gap-2 text-sm text-slate-400">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span>Available for opportunities</span>
+            </Link>
+
+            <div className="flex flex-col md:flex-row">
+              <p className="text-lg text-slate-300 font-medium">
+                Full Stack Developer
+              </p>
+              <div className="hidden md:flex px-4">|</div>
+              <div className="flex items-center gap-2 text-sm text-slate-400">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span>
+                  Available to{" "}
+                  <Link href={"/contact"} className="hover:underline">
+                    Connect
+                  </Link>
+                </span>
+              </div>
             </div>
-          </Link>
+          </div>
+
           <NavBar />
         </div>
       </div>
