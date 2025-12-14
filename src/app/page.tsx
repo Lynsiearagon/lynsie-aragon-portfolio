@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolioPicture from "/public/photos/me.jpg";
+import portfolioPicture from "/public/photos/me.jpeg";
 import Link from "next/link";
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
               alt="Headshot of Lynsie Aragon"
               width={350}
               height={350}
-              className="relative rounded-full border-4 border-slate-700 shadow-2xl object-none"
+              className="relative rounded-full border-4 border-slate-700 shadow-2xl object-cover"
               priority
             />
           </div>

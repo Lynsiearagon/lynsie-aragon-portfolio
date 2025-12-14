@@ -20,9 +20,6 @@ function Header() {
 
   return (
     <header className="bg-slate-800/80 backdrop-blur-sm border-b border-slate-700/50 sticky top-0 z-50">
-      <div className="bg-yellow-400 text-black font-bold font-lg text-center p-2">
-        SITE UNDER CONSTRUCTION
-      </div>
       <div
         className={`container mx-auto px-4 sm:px-6 lg:px-12 transition-all duration-300 ease-in-out ${
           isShrunk ? "py-2" : "py-4"
