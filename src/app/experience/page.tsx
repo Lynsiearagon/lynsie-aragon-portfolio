@@ -1,12 +1,18 @@
 import Job from "@/components/Job";
 import ProjectCard from "@/components/ProjectCard";
-import { projects, workHistory, skills, volunteerHistory } from "@/data/data";
+import {
+  projects,
+  workHistory,
+  skills,
+  volunteerHistory,
+  certificatesAndLicense,
+} from "@/data/data";
 
 export default function ExperiencePage() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-6xl mx-auto">
       {/* Hero Section */}
-      <section className="text-center mb-16">
+      <section className="text-center mb-12">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent h-20">
           #Experience
         </h1>
@@ -36,8 +42,8 @@ export default function ExperiencePage() {
       </section>
 
       {/* Skills */}
-      <section className="mt-8 mb-12 flex justify-center">
-        <div className="flex flex-wrap gap-2">
+      <section className="mb-8 flex justify-center">
+        <div className="flex flex-wrap gap-2 justify-center">
           {skills.map((s) => (
             <span
               key={s}
@@ -55,10 +61,12 @@ export default function ExperiencePage() {
           Work History
         </h2>
 
-        <div className="space-y-8">
-          {workHistory.map((job, index) => (
-            <Job job={job} key={index} />
-          ))}
+        <div className="bg-slate-800 rounded-xl p-8 border border-slate-700/30">
+          <div className="divide-y divide-slate-700/20">
+            {workHistory.map((job, index) => (
+              <Job job={job} key={index} compact />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -81,7 +89,7 @@ export default function ExperiencePage() {
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-8 lg:gap-12 items-stretch">
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
@@ -97,6 +105,17 @@ export default function ExperiencePage() {
         <div className="space-y-8">
           {volunteerHistory.map((job) => (
             <Job job={job} key={job.title} />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-3xl font-bold text-cyan-400 mb-8 flex items-center">
+          Certificates
+        </h2>
+        <div>
+          {certificatesAndLicense.map((license) => (
+            <Job job={license} key={license.title} />
           ))}
         </div>
       </section>

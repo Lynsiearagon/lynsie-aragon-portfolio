@@ -30,7 +30,7 @@ function Header() {
     <>
       <header className="bg-slate-800/90 backdrop-blur-sm border-b border-slate-700/50 sticky top-0 z-50">
         <div
-          className={`container mx-auto px-4 sm:px-6 lg:px-12 transition-[padding] duration-300 ease-in-out ${
+          className={`container mx-auto px-4 sm:px-6 lg:px-12 xl:px-20 transition-[padding] duration-300 ease-in-out ${
             isShrunk ? "py-2" : "py-4"
           }`}
         >

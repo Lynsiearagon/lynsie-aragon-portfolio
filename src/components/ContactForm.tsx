@@ -39,7 +39,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-slate-800/50 rounded-xl p-8 border border-slate-700/50 hover:border-blue-400/30 transition-all duration-300">
+    <div className="bg-slate-800 rounded-xl p-8 border border-slate-700/30 hover:border-cyan-400/30 transition-all duration-300 flex flex-col gap-4">
       <h3 className="text-xl font-semibold text-white mb-8">Message Me</h3>
 
       <form
@@ -64,7 +64,7 @@ export default function ContactForm() {
             <input
               name="first-name"
               required
-              className="bg-transparent border border-slate-700/40 rounded-md p-2 text-slate-50"
+              className="border border-slate-700/90 rounded-md p-2 text-slate-50 bg-slate-900/40"
             />
           </label>
 
@@ -73,7 +73,7 @@ export default function ContactForm() {
             <input
               name="last-name"
               required
-              className="bg-transparent border border-slate-700/40 rounded-md p-2 text-slate-50"
+              className="border border-slate-700/90 rounded-md p-2 text-slate-50 bg-slate-900/40"
             />
           </label>
         </div>
@@ -84,7 +84,7 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            className="bg-transparent border border-slate-700/40 rounded-md p-2 text-slate-50"
+            className="border border-slate-700/90 rounded-md p-2 text-slate-50 bg-slate-900/40"
           />
         </label>
 
@@ -94,7 +94,7 @@ export default function ContactForm() {
             name="message"
             required
             rows={5}
-            className="bg-transparent border border-slate-700/40 rounded-md p-2 text-slate-50"
+            className="border border-slate-700/90 rounded-md p-2 text-slate-50 bg-slate-900/40"
           />
         </label>
 

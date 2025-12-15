@@ -33,8 +33,7 @@ export default function ContactPage() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">LinkedIn</h3>
             <p className="text-slate-300 mb-6">
-              Connect with me professionally on LinkedIn and see my latest
-              updates
+              Let&apos;s connect professionally on LinkedIn
             </p>
             <Link
               href="https://www.linkedin.com/in/lynsie-aragon-dev/"
@@ -95,30 +94,6 @@ export default function ContactPage() {
           <ContactForm />
         </div>
       </section>
-
-      {/* Additional Platforms */}
-      {/* <section className="text-center">
-        <h2 className="text-2xl font-bold text-cyan-400 mb-6">
-          Other Platforms
-        </h2>
-        <div className="bg-slate-800/30 rounded-xl p-6 border border-slate-700/30">
-          <Link
-            href="https://wellfound.com/u/lynsie-aragon"
-            className="inline-flex items-center px-6 py-3 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 hover:text-white rounded-lg transition-all duration-200 border border-slate-600/50 hover:border-blue-400/50"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-            </svg>
-            View on Wellfound
-          </Link>
-        </div>
-      </section> */}
     </div>
   );
 }

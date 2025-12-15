@@ -28,31 +28,26 @@ const Carousel = ({ images }: CarouselProp) => {
   };
 
   return (
-    <div className="relative max-w-4xl mx-auto">
+    <div className="relative max-w-4xl mx-auto overflow-visible">
       {/* Main Image */}
-      <div className="relative overflow-hidden rounded-xl h-[40dvh] lg:h-[50dvh] w-auto">
+      <div className="relative overflow-hidden h-[40dvh] lg:h-[60dvh] w-auto ">
         <Image
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
           fill
-          className="object-contain transition-transform duration-500 ease-in-out hover:scale-105"
+          className="object-contain transition-transform duration-500 ease-in-out hover:scale-105 "
           priority
           sizes="100vh, 50vh"
         />
 
         {/* Image Overlay */}
         <div className=" bg-black/50"></div>
-
-        {/* Image Counter */}
-        <div className="absolute bottom-4 right-4 bg-slate-800/80 text-white px-3 py-1 rounded-full text-sm font-medium">
-          {currentIndex + 1} / {images.length}
-        </div>
       </div>
 
       {/* Navigation Buttons */}
       <button
         onClick={prevImage}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-slate-800/80 hover:bg-slate-700/90 text-white p-3 rounded-full cursor-pointer transition-all duration-200 hover:scale-110 border border-slate-600/50"
+        className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-slate-800/80 hover:bg-slate-700/90 text-white p-3 rounded-full cursor-pointer transition-all duration-200 hover:scale-110 border border-slate-600/50"
         aria-label="Previous image"
       >
         <svg
@@ -72,7 +67,7 @@ const Carousel = ({ images }: CarouselProp) => {
 
       <button
         onClick={nextImage}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-slate-800/80 hover:bg-slate-700/90 text-white p-3 rounded-full cursor-pointer transition-all duration-200 hover:scale-110 border border-slate-600/50"
+        className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 z-10 bg-slate-800/80 hover:bg-slate-700/90 text-white p-3 rounded-full cursor-pointer transition-all duration-200 hover:scale-110 border border-slate-600/50"
         aria-label="Next image"
       >
         <svg

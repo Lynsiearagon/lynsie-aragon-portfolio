@@ -22,7 +22,7 @@ export default function BowlingPage() {
       <section className="mb-16 text-center">
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div
-            className="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -41,7 +41,7 @@ export default function BowlingPage() {
           </div>
 
           <div
-            className="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -62,7 +62,7 @@ export default function BowlingPage() {
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           <div
-            className="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -81,7 +81,7 @@ export default function BowlingPage() {
           </div>
 
           <div
-            className="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -98,7 +98,7 @@ export default function BowlingPage() {
           </div>
 
           <div
-            className="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8 border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -214,7 +214,7 @@ export default function BowlingPage() {
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div
-            className="bg-slate-800 rounded-xl p-8 lg:p-16 border border-slate-700 text-center hover:border-blue-400 transition-all duration-300 bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8  border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}
@@ -234,7 +234,7 @@ export default function BowlingPage() {
             </div>
           </div>
           <div
-            className="bg-slate-800 rounded-xl p-8 lg:p-16 border border-slate-700 text-center hover:border-blue-400 transition-all duration-300 bg-cover bg-center bg-no-repeat relative"
+            className="bg-slate-800 rounded-xl p-8  border border-slate-700 text-center bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage: "url('/photos/bowling-alley-carpet.jfif')",
             }}

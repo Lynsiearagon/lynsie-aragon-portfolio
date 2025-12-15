@@ -107,8 +107,8 @@ export const projects = [
   {
     title: "Trip It",
     description:
-      "A MERN stack app that allows users to create and organize trips with others. I developed this app with three other devs, leading the frontend. ",
-    techStack: ["MERN Stack", "MongoDB", "Express", "React", "Node.js", "CSS"],
+      "Trip It allows users to create and organize trips together. I developed this app with three other developers, leading the frontend.",
+    techStack: ["MongoDB", "Express", "React", "Node.js", "CSS"],
     image: "/photos/TripItThumbnail.png",
     link: "https://trip-it.onrender.com/",
     codeLink: "https://github.com/ShawnaEHartley/trip-it#readme",
@@ -125,5 +125,16 @@ export const volunteerHistory = [
       "Trained senior citizens to use and troubleshoot personal tech devices promoting digital wellbeing, independence, and digital safety",
     ],
     isCurrent: false,
+  },
+];
+
+export const certificatesAndLicense = [
+  {
+    title: "Microsoft Certified: Azure Fundamentals",
+    company: "Microsoft",
+    location: "Remote",
+    period: "Issued Feb 2025",
+    description: ["Credential ID 5F19F73F0171028E"],
+    isCurrent: true,
   },
 ];

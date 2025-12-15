@@ -6,19 +6,17 @@ import { createPortal } from "react-dom";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false); // added
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    setMounted(true); // only allow portal after mount
+    setMounted(true);
   }, []);
 
-  // Close on route change
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  // Close on escape and lock body scroll while open
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
