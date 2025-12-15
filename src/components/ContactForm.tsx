@@ -9,24 +9,21 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("idle");
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    // Convert FormData → URLSearchParams (type-safe)
-    const params = new URLSearchParams();
-    formData.forEach((value, key) => {
-      if (typeof value === "string") {
-        params.append(key, value);
-      }
-    });
-
     try {
-      const res = await fetch("/", {
+      const form = e.currentTarget;
+      const data = new FormData(form);
+
+      const res = await fetch("/ContactForm.html", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: params.toString(),
+        body: new URLSearchParams(
+          Array.from(data.entries()).map(([key, value]) => [
+            key,
+            value.toString(),
+          ])
+        ).toString(),
       });
 
       if (res.ok) {
@@ -53,10 +50,8 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         className="space-y-4"
       >
-        {/* Required for Netlify */}
         <input type="hidden" name="form-name" value="contact" />
 
-        {/* Honeypot */}
         <p className="hidden">
           <label>
             Don’t fill this out if you’re human: <input name="bot-field" />
