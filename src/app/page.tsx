@@ -67,21 +67,21 @@ export default function Home() {
               </p>
 
               <div className="border-t border-slate-700/20 pt-6 mt-6">
-                <h3 className="text-xl font-semibold text-cyan-400 mb-4 text-center">
+                <h3 className="text-xl font-semibold text-cyan-400 mb-8 text-center">
                   Explore my experience or see bowling stats
                 </h3>
 
-                <div className="flex flex-wrap gap-4 justify-center">
+                <div className="inline-flex gap-4 justify-center items-center w-full">
                   <Link
                     href="/experience"
-                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg w-full justify-center"
                   >
-                    Go to Work History
+                    See Experience
                   </Link>
 
                   <Link
                     href="/bowling"
-                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-medium rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg w-full justify-center"
                   >
                     Take Me Bowling!
                   </Link>
