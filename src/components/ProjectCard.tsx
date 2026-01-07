@@ -33,9 +33,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
       </a>
 
       <div className="flex flex-col flex-1">
-        <p className="mt-4 text-slate-300">{project.description}</p>
+        <p className="mt-2 text-slate-300">{project.description}</p>
 
-        <ul className="flex flex-wrap gap-2 py-2 mt-4 justify-center">
+        <ul className="flex flex-wrap gap-2 py-2 mt-4 ">
           {project?.techStack?.map((techItem: string) => (
             <li
               key={techItem}
@@ -46,12 +46,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
           ))}
         </ul>
 
-        <div className="flex gap-8 items-center justify-center mt-8">
+        <div className="flex gap-4 items-center justify-center mt-8">
           <a
             href={project.link}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center px-6 py-1 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+            className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg text-center w-full"
           >
             Visit Website
           </a>
@@ -59,7 +59,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             href={project.codeLink}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center px-6 py-1 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg"
+            className="inline-flex items-center  justify-center px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg text-center w-full"
           >
             See ReadMe
           </a>
