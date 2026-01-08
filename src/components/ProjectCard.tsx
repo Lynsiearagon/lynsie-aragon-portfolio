@@ -51,7 +51,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             href={project.link}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg text-center w-full"
+            className="inline-flex items-center justify-center py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg text-center w-full"
           >
             Visit Website
           </a>
@@ -59,7 +59,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             href={project.codeLink}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center  justify-center px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg text-center w-full"
+            className="inline-flex items-center  justify-center py-2 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white text-sm font-medium rounded-md transition-all duration-200 transform hover:scale-105 hover:shadow-lg text-center w-full"
           >
             See ReadMe
           </a>
