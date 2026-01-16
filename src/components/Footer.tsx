@@ -49,6 +49,26 @@ function Footer() {
               Created and Maintained by{" "}
               <span className="text-cyan-400 font-semibold">Lynsie Aragon</span>
             </p>
+            <p className="text-slate-400 text-xs mt-2">
+              <a
+                href="https://github.com/Lynsiearagon/lynsie-aragon-portfolio#readme"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-200 transition-colors duration-200 hover:underline"
+              >
+                See ReadMe
+              </a>
+              <span className="px-3">|</span>
+              <a
+                href="https://lynsiearagon.github.io/Lynsie-portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-200 transition-colors duration-200 hover:underline"
+                title="Check out my original portfolio from when I started"
+              >
+                View Old Portfolio
+              </a>
+            </p>
             <p className="text-slate-500 text-xs mt-2">
               Built with Next.js, TypeScript, Tailwind, and AI Tools
             </p>

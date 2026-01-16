@@ -1,6 +1,12 @@
 import Carousel from "@/components/Carousel";
 import { bowlingImages } from "@/data/data.js";
 
+export const metadata = {
+  title: "Bowling | Lynsie Aragon - Bowler",
+  description:
+    "Discover Lynsie's passion for bowling - from her collegiate scholarship to chasing a perfect 300 game. View photos and stats from her bowling journey.",
+};
+
 export default function BowlingPage() {
   return (
     <div className="max-w-6xl mx-auto">

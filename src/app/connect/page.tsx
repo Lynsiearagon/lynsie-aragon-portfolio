@@ -1,6 +1,12 @@
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Connect | Lynsie Aragon - Full Stack Developer",
+  description:
+    "Get in touch with Lynsie Aragon. Connect on LinkedIn, send a message, or follow her on Github to discuss opportunities and collaborations.",
+};
+
 export default function ContactPage() {
   return (
     <div className="max-w-6xl mx-auto">

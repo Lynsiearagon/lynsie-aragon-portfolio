@@ -8,6 +8,12 @@ import {
   certificatesAndLicense,
 } from "@/data/data";
 
+export const metadata = {
+  title: "Experience | Lynsie Aragon - Full Stack Developer",
+  description:
+    "Explore Lynsie's professional experience, projects, skills, education, and certifications in full-stack development and software engineering.",
+};
+
 export default function ExperiencePage() {
   return (
     <div className="max-w-6xl mx-auto">
@@ -20,8 +26,9 @@ export default function ExperiencePage() {
 
         {/* Resume Download Button */}
         <a
-          href="/photos/LynsieAragonResume.pdf"
-          download
+          href="/LynsieAragonResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg border-0"
         >
           <svg
@@ -88,6 +95,19 @@ export default function ExperiencePage() {
           </svg>
           Projects
         </h2>
+
+        <p className="flex flex-col gap-6 mb-8 lg:mb-12 text-xl text-slate-300 leading-relaxed">
+          Below are the first applications I ever built during my time at App
+          Academy, where I studied to become a software developer. While these
+          applications no longer represent my skillset today, I proudly display
+          them as a way to show the growth in my career.
+          <span className="text-base">
+            <i>
+              Note: Projects are not responsive on mobile; Please allow extra
+              load time for Trip It.
+            </i>
+          </span>
+        </p>
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8 lg:gap-12 items-stretch">
           {projects.map((project) => (

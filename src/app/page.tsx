@@ -2,6 +2,12 @@ import Image from "next/image";
 import portfolioPicture from "/public/photos/me.jpeg";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Lynsie Aragon | Full-Stack Developer ",
+  description:
+    "Frontend-leaning Full-stack developer specializing in TypeScript, Next.js, and AI tools. Former bowling scholarship recipient passionate about creating exceptional user experiences.",
+};
+
 export default function Home() {
   return (
     <div className="max-w-5xl mx-auto">
